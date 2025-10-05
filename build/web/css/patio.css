@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+:root {
+  --cor-principal: #d4af37;
+  --cor-secundaria: #ffffff;
+  --cor-detalhe: rgba(30, 30, 30, 0.85);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-image: url(../imagens/DonMaia.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: var(--cor-secundaria);
+  overflow-x: hidden;
+}
+
+/* ===== HEADER & FOOTER ===== */
+header, footer {
+  background: var(--cor-detalhe);
+  color: var(--cor-principal);
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+header nav a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+  font-weight: 600;
+  background: var(--cor-principal);
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+header nav a:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ===== GRID DE CARDS ===== */
+.grid-cars {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  gap: 110px;
+}
+
+.car {
+  background: var(--cor-detalhe);
+  border-radius: 12px;
+  width: 450px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+
+.car:hover {
+  transform: translateY(-5px);
+}
+
+.car img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.car h3 {
+  color: var(--cor-principal);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.car p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--cor-secundaria);
+}
+
+/* ===== BOTÃO DENTRO DO CARD ===== */
+.car button {
+  background: var(--cor-principal);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.car button:hover {
+  background: #fff;
+  color: #000;
+}
